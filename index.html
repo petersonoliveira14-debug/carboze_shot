@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>CarboZé Shot — Vacine o Seu Combustível</title>
+
+  <meta name="description" content="CarboZé Shot: estabilizador e otimizador de combustível em dose única 10mL, exclusivo para motocicletas. Mais potência e vida longa para o motor.">
+  <meta name="keywords" content="CarboZé, Shot, estabilizador combustível, moto, motocicleta, aditivo combustível, sache">
+  <meta name="author" content="CarboZé">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shot.carboze.com.br">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shot.carboze.com.br">
+  <meta property="og:title" content="CarboZé Shot — Vacine o Seu Combustível">
+  <meta property="og:description" content="Dose única 10mL. Mais potência e vida longa para o motor da sua moto. Compatível com todos os combustíveis.">
+  <meta property="og:site_name" content="CarboZé">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CarboZé Shot — Vacine o Seu Combustível">
+  <meta name="twitter:description" content="Estabilizador de combustível em dose única para motos.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d1a0d'/><text x='50' y='76' text-anchor='middle' font-size='68' font-family='Impact,sans-serif' font-weight='900' fill='%236CC000'>Z</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80"
+        alt=""
+        class="hero__img"
+        loading="eager"
+        decoding="async"
+      >
+      <div class="hero__overlay"></div>
+      <div class="hero__glow"></div>
+    </div>
+
+    <div class="hero__content container">
+      <div class="hero__logo reveal reveal--up">
+        <svg viewBox="0 0 310 66" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CarboZé" class="logo-svg">
+          <title>CarboZé</title>
+          <text x="2" y="60" font-family="'Barlow Condensed',Impact,'Arial Narrow',sans-serif" font-weight="900" font-size="68" fill="rgba(255,255,255,0.88)" letter-spacing="-2">CARBO</text>
+          <text x="186" y="60" font-family="'Barlow Condensed',Impact,'Arial Narrow',sans-serif" font-weight="900" font-size="68" fill="#6CC000" letter-spacing="-2">ZÉ</text>
+          <path d="M299,4 C299,4 292,15 292,21 C292,27.6 295.1,32 299,32 C302.9,32 306,27.6 306,21 C306,15 299,4 299,4Z" fill="#6CC000"/>
+        </svg>
+      </div>
+
+      <div class="hero__badge reveal reveal--up" style="--delay:0.1s">
+        <svg class="badge__icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 1L10 6H15L11 9L13 14L8 11L3 14L5 9L1 6H6L8 1Z" fill="#0d1a0d"/>
+        </svg>
+        <span>VACINE O SEU COMBUSTÍVEL</span>
+      </div>
+
+      <h1 class="hero__headline reveal reveal--up" style="--delay:0.2s">
+        MAIS POTÊNCIA<br>
+        <em>E VIDA LONGA</em><br>
+        PARA O MOTOR.
+      </h1>
+
+      <p class="hero__sub reveal reveal--up" style="--delay:0.3s">
+        Dose única <strong>10 mL</strong> &mdash; exclusivo para motocicletas
+      </p>
+
+      <div class="hero__chips reveal reveal--up" style="--delay:0.4s">
+        <span class="chip">Todos os combustíveis</span>
+        <span class="chip">Dose única 10 mL</span>
+        <span class="chip">Exclusivo para motos</span>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-indicator__line"></div>
+      <span class="scroll-indicator__label">Deslize</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       O QUE É
+  ════════════════════════════════════════ -->
+  <section class="product" id="produto">
+    <div class="container">
+      <div class="product__grid">
+
+        <div class="product__text">
+          <span class="section-tag reveal reveal--left">O produto</span>
+          <h2 class="section-title reveal reveal--left" style="--delay:0.1s">
+            O QUE É O<br><span class="text-green">CARBOZÉ SHOT?</span>
+          </h2>
+          <p class="product__desc reveal reveal--left" style="--delay:0.15s">
+            O CarboZé Shot é um <strong>estabilizador e otimizador de combustível</strong>
+            em dose única de 10 mL — pensado para o dia a dia do motociclista.
+          </p>
+          <p class="product__desc reveal reveal--left" style="--delay:0.2s">
+            Compacto e prático, cabe no bolso. Uma dose por abastecimento é tudo
+            que o motor da sua moto precisa para performar no máximo.
+          </p>
+          <ul class="product__specs reveal reveal--left" style="--delay:0.25s" aria-label="Especificações do produto">
+            <li><span class="spec-label">Volume</span><span class="spec-value">10 mL</span></li>
+            <li><span class="spec-label">Formato</span><span class="spec-value">Dose única (sache)</span></li>
+            <li><span class="spec-label">Compatível com</span><span class="spec-value">Todos os combustíveis</span></li>
+            <li><span class="spec-label">Indicado para</span><span class="spec-value">Motocicletas</span></li>
+          </ul>
+        </div>
+
+        <div class="product__visual reveal reveal--right" style="--delay:0.1s" aria-hidden="true">
+          <div class="product__sache-wrapper">
+            <div class="product__glow-ring"></div>
+            <div class="sache-mockup">
+              <svg viewBox="0 0 180 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CarboZé Shot sache 10mL">
+                <defs>
+                  <linearGradient id="g-body" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1a3a0a"/>
+                    <stop offset="100%" stop-color="#0d1a0d"/>
+                  </linearGradient>
+                  <linearGradient id="g-shine" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+                    <stop offset="55%" stop-color="rgba(255,255,255,0.04)"/>
+                    <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                  </linearGradient>
+                  <filter id="f-shadow">
+                    <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#6CC000" flood-opacity="0.35"/>
+                  </filter>
+                </defs>
+                <rect x="12" y="12" width="156" height="276" rx="14" fill="url(#g-body)" filter="url(#f-shadow)"/>
+                <rect x="12" y="12" width="52" height="276" rx="14" fill="url(#g-shine)"/>
+                <rect x="12" y="12" width="156" height="20" rx="5" fill="rgba(108,192,0,0.35)"/>
+                <rect x="12" y="268" width="156" height="20" rx="5" fill="rgba(108,192,0,0.35)"/>
+                <rect x="12" y="102" width="156" height="36" fill="#6CC000"/>
+                <text x="90" y="125" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="800" font-size="11" fill="#0d1a0d" letter-spacing="0.8">VACINE O SEU COMBUSTÍVEL</text>
+                <text x="90" y="84" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="24" fill="rgba(255,255,255,0.9)">CARBO<tspan fill="#6CC000">ZÉ</tspan></text>
+                <text x="90" y="156" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="15" fill="white">MAIS POTÊNCIA E</text>
+                <text x="90" y="174" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="15" fill="white">VIDA LONGA PARA</text>
+                <text x="90" y="192" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="15" fill="#6CC000">O MOTOR.</text>
+                <text x="90" y="232" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="32" fill="white">10 mL</text>
+                <text x="90" y="250" text-anchor="middle" font-family="Inter,sans-serif" font-weight="400" font-size="10" fill="rgba(255,255,255,0.45)">dose única</text>
+                <rect x="38" y="50" width="8" height="24" rx="2" fill="rgba(255,255,255,0.12)"/>
+                <rect x="50" y="44" width="8" height="30" rx="2" fill="rgba(255,255,255,0.08)"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       BENEFÍCIOS
+  ════════════════════════════════════════ -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <div class="section-header reveal reveal--up">
+        <span class="section-tag">Por que usar</span>
+        <h2 class="section-title">
+          O QUE O SHOT<br><span class="text-green">FAZ PELA SUA MOTO</span>
+        </h2>
+      </div>
+
+      <div class="benefits__grid" role="list">
+
+        <article class="benefit-card glass-card reveal reveal--up tilt-card" style="--delay:0.05s" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#6CC000" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+              <path d="M24 10C24 10 15 22 15 29C15 34 19 38 24 38C29 38 33 34 33 29C33 22 24 10 24 10Z" fill="#6CC000" opacity="0.15"/>
+              <path d="M24 10C24 10 15 22 15 29C15 34 19 38 24 38C29 38 33 34 33 29C33 22 24 10 24 10Z" stroke="#6CC000" stroke-width="1.5" fill="none"/>
+              <path d="M19 28C19 28 21.5 25 24 25C26 25 27.5 27 27.5 29C27.5 31 26 33 24 33" stroke="#6CC000" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Protege o Combustível</h3>
+          <p class="benefit-card__desc">Estabiliza o combustível, prevenindo degradação e evaporação entre os abastecimentos.</p>
+          <div class="benefit-card__line" aria-hidden="true"></div>
+        </article>
+
+        <article class="benefit-card glass-card reveal reveal--up tilt-card" style="--delay:0.1s" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#6CC000" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+              <path d="M28 9L16 26H24L20 40L34 22H26L28 9Z" fill="#6CC000" opacity="0.2"/>
+              <path d="M28 9L16 26H24L20 40L34 22H26L28 9Z" stroke="#6CC000" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Mais Potência e Desempenho</h3>
+          <p class="benefit-card__desc">Otimiza a combustão para que cada gota de combustível entregue o máximo de energia ao motor.</p>
+          <div class="benefit-card__line" aria-hidden="true"></div>
+        </article>
+
+        <article class="benefit-card glass-card reveal reveal--up tilt-card" style="--delay:0.15s" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#6CC000" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+              <path d="M12 33C12 25 17.4 18 24 18C30.6 18 36 25 36 33" stroke="#6CC000" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.35"/>
+              <path d="M12 33C12 25 17.4 18 24 18C27.5 18 30.6 19.5 32.8 22" stroke="#6CC000" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <circle cx="24" cy="33" r="2.5" fill="#6CC000"/>
+              <line x1="24" y1="33" x2="32" y2="22" stroke="#6CC000" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Reduz o Consumo</h3>
+          <p class="benefit-card__desc">Motor mais eficiente queima menos combustível — mais quilômetros por litro na sua moto.</p>
+          <div class="benefit-card__line" aria-hidden="true"></div>
+        </article>
+
+        <article class="benefit-card glass-card reveal reveal--up tilt-card" style="--delay:0.2s" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="#6CC000" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>
+              <path d="M24 10L36 16V25C36 32.5 30.5 38.8 24 41C17.5 38.8 12 32.5 12 25V16L24 10Z" fill="#6CC000" opacity="0.12"/>
+              <path d="M24 10L36 16V25C36 32.5 30.5 38.8 24 41C17.5 38.8 12 32.5 12 25V16L24 10Z" stroke="#6CC000" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+              <path d="M18 25L22 29L30 21" stroke="#6CC000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Reduz a Manutenção</h3>
+          <p class="benefit-card__desc">Lubrifica e protege o sistema de injeção e carburador, aumentando a vida útil do motor.</p>
+          <div class="benefit-card__line" aria-hidden="true"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       MODO DE USO
+  ════════════════════════════════════════ -->
+  <section class="howto" id="como-usar">
+    <div class="container">
+      <div class="section-header reveal reveal--up">
+        <span class="section-tag">Como usar</span>
+        <h2 class="section-title">
+          SIMPLES,<br><span class="text-green">RÁPIDO E EFICAZ</span>
+        </h2>
+      </div>
+
+      <div class="steps" role="list">
+
+        <div class="step reveal reveal--up" role="listitem" style="--delay:0.05s">
+          <div class="step__head">
+            <div class="step__number" aria-hidden="true">01</div>
+            <div class="step__connector-h" aria-hidden="true"></div>
+          </div>
+          <div class="step__content glass-card">
+            <h3 class="step__title">Abra o sache</h3>
+            <p class="step__desc">Rasgue pelo picote superior do sache de 10 mL.</p>
+          </div>
+        </div>
+
+        <div class="step reveal reveal--up" role="listitem" style="--delay:0.1s">
+          <div class="step__head">
+            <div class="step__number" aria-hidden="true">02</div>
+            <div class="step__connector-h" aria-hidden="true"></div>
+          </div>
+          <div class="step__content glass-card">
+            <h3 class="step__title">Adicione ao tanque</h3>
+            <p class="step__desc">Despeje o conteúdo diretamente no tanque <em>antes</em> de abastecer.</p>
+          </div>
+        </div>
+
+        <div class="step reveal reveal--up" role="listitem" style="--delay:0.15s">
+          <div class="step__head">
+            <div class="step__number" aria-hidden="true">03</div>
+            <div class="step__connector-h" aria-hidden="true"></div>
+          </div>
+          <div class="step__content glass-card">
+            <h3 class="step__title">Abastece normalmente</h3>
+            <p class="step__desc">Complete o abastecimento. O Shot se mistura automaticamente ao combustível.</p>
+          </div>
+        </div>
+
+        <div class="step step--last reveal reveal--up" role="listitem" style="--delay:0.2s">
+          <div class="step__head">
+            <div class="step__number step__number--done" aria-hidden="true">✓</div>
+          </div>
+          <div class="step__content glass-card step__content--done">
+            <h3 class="step__title">Repita a cada abastecimento</h3>
+            <p class="step__desc">Melhores resultados a partir do <strong>3º tanque consecutivo</strong>.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Dosagem -->
+      <div class="dosage reveal reveal--up" style="--delay:0.1s">
+        <h3 class="dosage__title">Tabela de Dosagem</h3>
+        <div class="dosage__table glass-card" role="table" aria-label="Tabela de dosagem CarboZé Shot">
+          <div class="dosage__header" role="row">
+            <span role="columnheader">Modo</span>
+            <span role="columnheader">Proporção</span>
+            <span role="columnheader">Exemplo</span>
+          </div>
+          <div class="dosage__row" role="row">
+            <span role="cell"><span class="d-badge d-badge--std">Padrão</span></span>
+            <span role="cell"><strong>1 mL</strong> por litro</span>
+            <span role="cell" class="dosage__ex">1 sache = 10 L</span>
+          </div>
+          <div class="dosage__divider" aria-hidden="true"></div>
+          <div class="dosage__row" role="row">
+            <span role="cell"><span class="d-badge d-badge--shock">Choque</span></span>
+            <span role="cell"><strong>1 mL</strong> por 500 mL</span>
+            <span role="cell" class="dosage__ex">1 sache = 5 L</span>
+          </div>
+          <div class="dosage__warn" role="note">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" aria-hidden="true">
+              <path d="M8 2L14 13H2L8 2Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+              <line x1="8" y1="7" x2="8" y2="10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <circle cx="8" cy="12" r="0.7" fill="currentColor"/>
+            </svg>
+            <span>Não exceder <strong>2 mL por litro</strong> de combustível</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       INFORMAÇÕES TÉCNICAS
+  ════════════════════════════════════════ -->
+  <section class="tech" id="tecnico">
+    <div class="container">
+      <div class="tech__layout">
+        <div class="tech__header reveal reveal--left">
+          <span class="section-tag">Especificações</span>
+          <h2 class="section-title">
+            INFORMAÇÕES<br><span class="text-green">TÉCNICAS</span>
+          </h2>
+        </div>
+        <div class="tech__items">
+          <div class="tech-item glass-card reveal reveal--right" style="--delay:0s">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C12 2 6 8 6 14C6 17.3 8.7 20 12 20C15.3 20 18 17.3 18 14C18 8 12 2 12 2Z" stroke="#6CC000" stroke-width="1.3"/>
+                <path d="M9 14C9 12.3 10.3 11 12 11" stroke="#6CC000" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="tech-item__label">Compatibilidade</span>
+              <span class="tech-item__value">Todos os tipos de combustíveis</span>
+            </div>
+          </div>
+          <div class="tech-item glass-card reveal reveal--right" style="--delay:0.05s">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="#6CC000" stroke-width="1.3"/>
+                <path d="M12 7V12L15 14" stroke="#6CC000" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="tech-item__label">Frequência de uso</span>
+              <span class="tech-item__value">A cada abastecimento</span>
+            </div>
+          </div>
+          <div class="tech-item glass-card reveal reveal--right" style="--delay:0.1s">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 7H21M3 7V17C3 18.1 3.9 19 5 19H19C20.1 19 21 18.1 21 17V7M3 7L5 5H19L21 7" stroke="#6CC000" stroke-width="1.3" stroke-linejoin="round"/>
+                <line x1="12" y1="11" x2="12" y2="15" stroke="#6CC000" stroke-width="1.3" stroke-linecap="round"/>
+                <line x1="9" y1="13" x2="15" y2="13" stroke="#6CC000" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="tech-item__label">Dose máxima</span>
+              <span class="tech-item__value">2 mL por litro de combustível</span>
+            </div>
+          </div>
+          <div class="tech-item glass-card reveal reveal--right" style="--delay:0.15s">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="12" cy="16" rx="5" ry="3" stroke="#6CC000" stroke-width="1.3"/>
+                <path d="M7 16V10C7 7.2 9.2 5 12 5C14.8 5 17 7.2 17 10V16" stroke="#6CC000" stroke-width="1.3"/>
+                <path d="M9 10C9 8.3 10.3 7 12 7" stroke="#6CC000" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="tech-item__label">Indicado para</span>
+              <span class="tech-item__value">Motocicletas — uso exclusivo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       INFORMAÇÕES LEGAIS
+  ════════════════════════════════════════ -->
+  <section class="legal" id="legal">
+    <div class="container">
+      <div class="legal__box glass-card reveal reveal--up">
+        <h2 class="legal__title">Informações Legais</h2>
+        <div class="legal__grid">
+          <div class="legal__item">
+            <span class="legal__label">Produzido sob licença de</span>
+            <span class="legal__value">GB COMERCIO INTERNACIONAL LTDA</span>
+          </div>
+          <div class="legal__item">
+            <span class="legal__label">CNPJ</span>
+            <span class="legal__value">70.159.512 / 0001-80</span>
+          </div>
+          <div class="legal__item">
+            <span class="legal__label">Envasado por</span>
+            <span class="legal__value">RESINORTE INDUSTRIA DE POLIMEROS S/A</span>
+          </div>
+          <div class="legal__item">
+            <span class="legal__label">Químico responsável</span>
+            <span class="legal__value">CRQ nº 04219953</span>
+          </div>
+          <div class="legal__item legal__item--full">
+            <span class="legal__label">SAC</span>
+            <span class="legal__value">
+              <a href="mailto:sac@carboze.com.br" class="legal__link">sac@carboze.com.br</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <svg viewBox="0 0 240 52" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CarboZé" height="34">
+          <text x="2" y="46" font-family="'Barlow Condensed',Impact,sans-serif" font-weight="900" font-size="52" fill="rgba(255,255,255,0.45)" letter-spacing="-2">CARBO</text>
+          <text x="139" y="46" font-family="'Barlow Condensed',Impact,sans-serif" font-weight="900" font-size="52" fill="#6CC000" letter-spacing="-2">ZÉ</text>
+          <path d="M222,3 C222,3 216,12 216,17 C216,21.4 218.7,25 222,25 C225.3,25 228,21.4 228,17 C228,12 222,3 222,3Z" fill="#6CC000"/>
+        </svg>
+      </div>
+
+      <nav class="footer__links" aria-label="Links do rodapé">
+        <a href="https://www.instagram.com/ocarboze" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="Instagram @ocarboze">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="17" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+          </svg>
+          @ocarboze
+        </a>
+        <a href="https://carboze.com.br" target="_blank" rel="noopener noreferrer" class="footer__link">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="17" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M2 12H22M12 3C9 7 8 9.5 8 12C8 14.5 9 17 12 21M12 3C15 7 16 9.5 16 12C16 14.5 15 17 12 21" stroke="currentColor" stroke-width="1.3"/>
+          </svg>
+          carboze.com.br
+        </a>
+        <a href="mailto:sac@carboze.com.br" class="footer__link">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="17" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M2 8L12 14L22 8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          sac@carboze.com.br
+        </a>
+      </nav>
+
+      <p class="footer__copy">
+        &copy; 2025 CarboZé. Todos os direitos reservados.<br>
+        <span>Produto exclusivo para motocicletas. Não exceder a dosagem recomendada.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
