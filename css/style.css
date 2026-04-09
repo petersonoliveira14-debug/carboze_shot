@@ -202,7 +202,7 @@ strong { font-weight: 600; color: var(--c-100); }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
+  overflow: hidden; /* contém o glow e qualquer overflow */
 }
 
 .hero__bg {
@@ -234,7 +234,7 @@ strong { font-weight: 600; color: var(--c-100); }
   bottom: -80px;
   left: 50%;
   transform: translateX(-50%);
-  width: 500px;
+  width: min(500px, 100vw);
   height: 260px;
   background: radial-gradient(ellipse, rgba(108,192,0,0.14) 0%, transparent 70%);
   pointer-events: none;
@@ -243,8 +243,8 @@ strong { font-weight: 600; color: var(--c-100); }
 .hero__content {
   position: relative;
   z-index: 1;
-  padding-top: var(--sp-24);
-  padding-bottom: var(--sp-24);
+  padding-top: clamp(5rem, 18vw, 8rem);
+  padding-bottom: clamp(5rem, 18vw, 8rem);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -589,9 +589,9 @@ strong { font-weight: 600; color: var(--c-100); }
 
 .dosage__header {
   display: grid;
-  grid-template-columns: 90px 1fr 1fr;
-  gap: var(--sp-4);
-  padding: var(--sp-3) var(--sp-5);
+  grid-template-columns: 80px 1fr 1fr;
+  gap: var(--sp-2);
+  padding: var(--sp-3) var(--sp-4);
   background: var(--c-surface-2);
   border-bottom: 1px solid var(--c-border);
   font-size: var(--fs-xs);
@@ -602,9 +602,9 @@ strong { font-weight: 600; color: var(--c-100); }
 }
 .dosage__row {
   display: grid;
-  grid-template-columns: 90px 1fr 1fr;
-  gap: var(--sp-4);
-  padding: var(--sp-4) var(--sp-5);
+  grid-template-columns: 80px 1fr 1fr;
+  gap: var(--sp-2);
+  padding: var(--sp-4) var(--sp-4);
   align-items: center;
   font-size: var(--fs-sm);
   color: var(--c-200);
