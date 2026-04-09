@@ -37,13 +37,14 @@
   ════════════════════════════════════════ -->
   <section class="hero" id="hero">
     <div class="hero__bg" aria-hidden="true">
-      <img
-        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80"
-        alt=""
-        class="hero__img"
-        loading="eager"
-        decoding="async"
-      >
+      <video
+        class="hero__video"
+        src="https://carboze.com.br/assets/cz-fuel-pour-D7fFGdRa.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
       <div class="hero__overlay"></div>
       <div class="hero__glow"></div>
     </div>
@@ -117,41 +118,15 @@
           </ul>
         </div>
 
-        <div class="product__visual reveal reveal--right" style="--delay:0.1s" aria-hidden="true">
-          <div class="product__sache-wrapper">
+        <div class="product__visual reveal reveal--right" style="--delay:0.1s">
+          <div class="product__mockup-wrap">
             <div class="product__glow-ring"></div>
-            <div class="sache-mockup">
-              <svg viewBox="0 0 180 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CarboZé Shot sache 10mL">
-                <defs>
-                  <linearGradient id="g-body" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#1a3a0a"/>
-                    <stop offset="100%" stop-color="#0d1a0d"/>
-                  </linearGradient>
-                  <linearGradient id="g-shine" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
-                    <stop offset="55%" stop-color="rgba(255,255,255,0.04)"/>
-                    <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
-                  </linearGradient>
-                  <filter id="f-shadow">
-                    <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#6CC000" flood-opacity="0.35"/>
-                  </filter>
-                </defs>
-                <rect x="12" y="12" width="156" height="276" rx="14" fill="url(#g-body)" filter="url(#f-shadow)"/>
-                <rect x="12" y="12" width="52" height="276" rx="14" fill="url(#g-shine)"/>
-                <rect x="12" y="12" width="156" height="20" rx="5" fill="rgba(108,192,0,0.35)"/>
-                <rect x="12" y="268" width="156" height="20" rx="5" fill="rgba(108,192,0,0.35)"/>
-                <rect x="12" y="102" width="156" height="36" fill="#6CC000"/>
-                <text x="90" y="125" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="800" font-size="11" fill="#0d1a0d" letter-spacing="0.8">VACINE O SEU COMBUSTÍVEL</text>
-                <text x="90" y="84" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="24" fill="rgba(255,255,255,0.9)">CARBO<tspan fill="#6CC000">ZÉ</tspan></text>
-                <text x="90" y="156" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="15" fill="white">MAIS POTÊNCIA E</text>
-                <text x="90" y="174" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="15" fill="white">VIDA LONGA PARA</text>
-                <text x="90" y="192" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="15" fill="#6CC000">O MOTOR.</text>
-                <text x="90" y="232" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="900" font-size="32" fill="white">10 mL</text>
-                <text x="90" y="250" text-anchor="middle" font-family="Inter,sans-serif" font-weight="400" font-size="10" fill="rgba(255,255,255,0.45)">dose única</text>
-                <rect x="38" y="50" width="8" height="24" rx="2" fill="rgba(255,255,255,0.12)"/>
-                <rect x="50" y="44" width="8" height="30" rx="2" fill="rgba(255,255,255,0.08)"/>
-              </svg>
-            </div>
+            <img
+              src="https://carboze.com.br/assets/carboze-product-DO0rbJ3r.png"
+              alt="CarboZé Shot — produto 10mL"
+              class="product__mockup-img"
+              loading="lazy"
+            />
           </div>
         </div>
 
@@ -410,7 +385,8 @@
 
       <div class="gallery__grid">
 
-        <div class="gallery__card reveal reveal--up" style="--delay:0.05s; --img:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&h=600&q=80')">
+        <!-- Alta Performance: Yamaha R6 vermelha em pista — Pexels -->
+        <div class="gallery__card reveal reveal--up" style="--delay:0.05s; --img:url('https://images.pexels.com/photos/2611690/pexels-photo-2611690.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop')">
           <div class="gallery__overlay"></div>
           <div class="gallery__info">
             <span class="gallery__tag">Alta Performance</span>
@@ -418,7 +394,8 @@
           </div>
         </div>
 
-        <div class="gallery__card reveal reveal--up" style="--delay:0.1s; --img:url('https://images.unsplash.com/photo-1547549082-6bc09f2049ae?auto=format&fit=crop&w=800&h=600&q=80')">
+        <!-- No Trabalho: motociclista com mochila em rua urbana — Pexels -->
+        <div class="gallery__card reveal reveal--up" style="--delay:0.1s; --img:url('https://images.pexels.com/photos/4518846/pexels-photo-4518846.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop')">
           <div class="gallery__overlay"></div>
           <div class="gallery__info">
             <span class="gallery__tag">No Trabalho</span>
@@ -426,7 +403,8 @@
           </div>
         </div>
 
-        <div class="gallery__card reveal reveal--up" style="--delay:0.15s; --img:url('https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=800&h=600&q=80')">
+        <!-- Urbano: moto esportiva na cidade — Pexels -->
+        <div class="gallery__card reveal reveal--up" style="--delay:0.15s; --img:url('https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop')">
           <div class="gallery__overlay"></div>
           <div class="gallery__info">
             <span class="gallery__tag">Urbano</span>
@@ -434,7 +412,8 @@
           </div>
         </div>
 
-        <div class="gallery__card gallery__card--wide reveal reveal--up" style="--delay:0.05s; --img:url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1200&h=500&q=80')">
+        <!-- Estrada: motociclista em estrada aberta — Pexels -->
+        <div class="gallery__card gallery__card--wide reveal reveal--up" style="--delay:0.05s; --img:url('https://images.pexels.com/photos/2519374/pexels-photo-2519374.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop')">
           <div class="gallery__overlay"></div>
           <div class="gallery__info">
             <span class="gallery__tag">Estrada</span>
@@ -442,7 +421,8 @@
           </div>
         </div>
 
-        <div class="gallery__card reveal reveal--up" style="--delay:0.1s; --img:url('https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?auto=format&fit=crop&w=800&h=600&q=80')">
+        <!-- Clássica: Harley Davidson custom — Pexels -->
+        <div class="gallery__card reveal reveal--up" style="--delay:0.1s; --img:url('https://images.pexels.com/photos/2519378/pexels-photo-2519378.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop')">
           <div class="gallery__overlay"></div>
           <div class="gallery__info">
             <span class="gallery__tag">Clássica</span>
@@ -450,7 +430,8 @@
           </div>
         </div>
 
-        <div class="gallery__card reveal reveal--up" style="--delay:0.15s; --img:url('https://images.unsplash.com/photo-1505559954668-a4b5f3f0e0e1?auto=format&fit=crop&w=800&h=600&q=80')">
+        <!-- Aventura: moto off-road em trilha — Pexels -->
+        <div class="gallery__card reveal reveal--up" style="--delay:0.15s; --img:url('https://images.pexels.com/photos/163210/motorcycles-race-helmets-pilots-163210.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop')">
           <div class="gallery__overlay"></div>
           <div class="gallery__info">
             <span class="gallery__tag">Aventura</span>

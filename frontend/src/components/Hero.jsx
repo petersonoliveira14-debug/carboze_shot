@@ -66,12 +66,16 @@ export default function Hero() {
 
   return (
     <section className="hero" ref={heroRef} id="home">
-      <div
-        className="hero__bg"
-        style={{
-          backgroundImage: `url('https://images.pexels.com/photos/2393835/pexels-photo-2393835.jpeg?auto=compress&cs=tinysrgb&w=1400')`,
-        }}
-      />
+      <div className="hero__bg">
+        <video
+          className="hero__video"
+          src="https://carboze.com.br/assets/cz-fuel-pour-D7fFGdRa.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      </div>
       <div className="hero__overlay" />
       <canvas ref={canvasRef} className="hero__canvas" />
 
