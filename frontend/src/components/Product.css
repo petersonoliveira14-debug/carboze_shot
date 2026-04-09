@@ -1,0 +1,60 @@
+.product { padding: 5rem 0; }
+
+.product__grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+.product__text { display: flex; flex-direction: column; gap: 1rem; }
+.product__text p { color: var(--c-200); line-height: 1.7; }
+
+.product__specs {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-md);
+}
+.product__spec { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; }
+.product__spec-value {
+  font-family: var(--f-display);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--c-green);
+}
+.product__spec-label { font-size: 0.7rem; color: var(--c-400); text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; }
+.product__spec-divider { width: 1px; height: 36px; background: var(--c-border); flex-shrink: 0; }
+
+.product__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__sachet {
+  position: relative;
+  width: 120px;
+}
+.product__sachet svg { width: 100%; height: auto; filter: drop-shadow(0 0 32px rgba(108,192,0,0.18)); }
+.product__sachet-glow {
+  position: absolute;
+  inset: -20%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(108,192,0,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* reveal */
+.container { transition: opacity 0.6s, transform 0.6s; }
+.revealed { opacity: 1; transform: none; }
+
+@media (max-width: 640px) {
+  .product__grid { grid-template-columns: 1fr; }
+  .product__visual { display: none; }
+  .product__specs { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+}

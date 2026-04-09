@@ -1,0 +1,103 @@
+.howto { padding: 5rem 0; }
+
+.howto__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.howto__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.howto__step-number {
+  font-family: var(--f-display);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--c-green);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.howto__step-connector {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  right: -50%;
+  height: 1px;
+  background: linear-gradient(to right, var(--c-green-border), transparent);
+}
+.howto__step:last-child .howto__step-connector { display: none; }
+
+.howto__step-body {
+  padding: 1.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.howto__step-body h3 {
+  font-family: var(--f-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--c-white);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.howto__step-body p { font-size: 0.875rem; color: var(--c-200); }
+
+.howto__table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--c-border);
+}
+.howto__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.howto__table th {
+  background: var(--c-surface-2);
+  color: var(--c-400);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--c-border);
+}
+.howto__table td {
+  padding: 0.875rem 1.25rem;
+  color: var(--c-100);
+  border-bottom: 1px solid var(--c-border);
+}
+.howto__table tr:last-child td { border-bottom: none; }
+.howto__table td:first-child { color: var(--c-green); font-weight: 600; }
+
+.howto__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: var(--c-amber-dim);
+  border: 1px solid var(--c-amber-border);
+  border-radius: var(--r-md);
+  padding: 1rem 1.25rem;
+}
+.howto__notice svg { flex-shrink: 0; margin-top: 2px; }
+.howto__notice p { font-size: 0.875rem; color: var(--c-200); line-height: 1.6; }
+
+@media (max-width: 640px) {
+  .howto__steps { grid-template-columns: 1fr; gap: 1rem; }
+  .howto__step-connector { display: none; }
+  .howto__step { flex-direction: row; text-align: left; gap: 1rem; align-items: flex-start; }
+  .howto__step-number { font-size: 2rem; min-width: 2.5rem; }
+  .howto__step-body { margin-top: 0; }
+}
