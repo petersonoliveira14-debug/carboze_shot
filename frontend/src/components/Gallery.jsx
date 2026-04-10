@@ -11,44 +11,38 @@ const CARDS = [
   {
     tag: 'Alta performance',
     desc: 'Esportivas e motos de alta cilindrada',
-    // Yamaha R6 sport bike vermelho em pista
-    img: 'https://images.pexels.com/photos/2611690/pexels-photo-2611690.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    color: '#6CC000',
+    // Yamaha R6 amarelo/preto — sport bike cinematic (verificado visualmente)
+    img: 'https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=800&h=600&q=80',
   },
   {
     tag: 'No trabalho',
     desc: 'Motoboys e entregadores no dia a dia',
-    // Motociclista com mochila em rua urbana movimentada
-    img: 'https://images.pexels.com/photos/4518846/pexels-photo-4518846.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    color: '#6CC000',
+    // Motoboy com maleta de entrega em moto commuter tipo CG (verificado)
+    img: 'https://images.pexels.com/photos/12203654/pexels-photo-12203654.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
   },
   {
     tag: 'Urbano',
     desc: 'Motos populares nas ruas da cidade',
-    // Honda CB na cidade noturna
-    img: 'https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    color: '#6CC000',
+    // Kawasaki Z1000 em ambiente urbano (verificado)
+    img: 'https://images.pexels.com/photos/29751522/pexels-photo-29751522.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
   },
   {
     tag: 'Estrada',
     desc: 'Longas distâncias com motor protegido',
-    // Motociclista em estrada aberta ao pôr do sol
-    img: 'https://images.pexels.com/photos/2519374/pexels-photo-2519374.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    color: '#6CC000',
+    // Harley-Davidson em rodovia ao pôr do sol (verificado)
+    img: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&h=600&q=80',
   },
   {
     tag: 'Clássica',
     desc: 'Motos vintage e custom',
-    // Harley Davidson clássica preta
-    img: 'https://images.pexels.com/photos/2519378/pexels-photo-2519378.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    color: '#6CC000',
+    // Royal Enfield Classic verde em floresta — cinematográfico (verificado)
+    img: 'https://images.pexels.com/photos/2393835/pexels-photo-2393835.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
   },
   {
     tag: 'Aventura',
-    desc: 'Trilha e off-road com proteção máxima',
-    // Adventure bike em trilha de terra
-    img: 'https://images.pexels.com/photos/163210/motorcycles-race-helmets-pilots-163210.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    color: '#6CC000',
+    desc: 'Trilha e motocross com proteção máxima',
+    // Motocross em areia — nuvem de poeira cinematográfica (verificado)
+    img: 'https://images.pexels.com/photos/2745827/pexels-photo-2745827.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
   },
 ]
 

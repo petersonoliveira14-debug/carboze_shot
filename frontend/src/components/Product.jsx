@@ -58,7 +58,7 @@ export default function Product() {
             <div className="product__mockup">
               <div className="product__mockup-glow" />
               <img
-                src="/mockup.jpeg"
+                src="/mockup.png"
                 alt="CarboZé Shot — tubo 10mL na mão"
                 className="product__mockup-img"
               />

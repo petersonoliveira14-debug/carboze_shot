@@ -42,6 +42,8 @@ export default function Footer() {
             Produzido sob licença de GB COMERCIO INTERNACIONAL LTDA — CNPJ 70.159.512/0001-80.
             Envasado por RESINORTE INDUSTRIA DE POLIMEROS S/A.
             Químico responsável: CRQ nº 04219953.
+            Válido por 4 anos após a data de fabricação.
+            Data de fabricação e lote: Vide rótulo do produto.
           </p>
         </div>
       </div>
