@@ -43,7 +43,7 @@ export default function Product() {
               </div>
               <div className="product__spec-divider" />
               <div className="product__spec">
-                <span className="product__spec-value">1:1000</span>
+                <span className="product__spec-value">1mL/1L</span>
                 <span className="product__spec-label">Proporção padrão</span>
               </div>
               <div className="product__spec-divider" />

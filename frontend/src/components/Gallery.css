@@ -12,6 +12,11 @@
   grid-column: span 2;
 }
 
+/* card 6 (Aventura) pinned to col 3 — below Clássica */
+.gallery__card:nth-child(6) {
+  grid-column: 3;
+}
+
 .gallery__card {
   position: relative;
   border-radius: var(--r-lg);
